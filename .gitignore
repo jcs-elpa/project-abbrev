@@ -10,3 +10,6 @@ custom-abbrev-pkg.el
 # ignore I use to not ignore.
 Update_Log.txt
 TODO(jenchieh).txt
+
+# Ignore test files/directories.
+custom-abbrev.config
