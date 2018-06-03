@@ -17,6 +17,7 @@ Complete the current word that point currently on.
 (define-key global-map (kbd "C-<return>") #'custom-abbrev-complete-word)
 ```
 
+
 ## Config Example ##
 This is example of the `custom-abbrev.config` file. Notice this can be customize
 in any programming language or even just a text file as long as you follow this format.
@@ -29,6 +30,7 @@ in any programming language or even just a text file as long as you follow this 
 sysout=System.out.println();
 syserr=System.err.println();
 ```
+
 
 ## Screenshot ##
 <img src="./screenshot/custom-abbrev-demo.gif" with="600" height="264"/>
