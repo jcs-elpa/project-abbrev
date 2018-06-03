@@ -1,6 +1,6 @@
 # custom-abbrev #
 
-Customize your own complete shortcut abbreviation in the project.<br/><br/>
+Customize your own abbreviation expansion in the project.<br/><br/>
 
 
 ## Configuration ##
