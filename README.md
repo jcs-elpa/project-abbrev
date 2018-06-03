@@ -19,7 +19,7 @@ Complete the current word that point currently on.
 
 ## Config Example ##
 This is example of the `custom-abbrev.config` file. Notice this can be customize
-in any language as long you follow this format.
+in any programming language or even just a text file as long as you follow this format.
 ```
 #
 # Customize all the expand shortcut here.
