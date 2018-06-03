@@ -1,4 +1,4 @@
-;;; custom-abbrev.el --- Customize your own complete shortcut in the project.                     -*- lexical-binding: t; -*-
+;;; custom-abbrev.el --- Customize your own abbreviation expansion in the project.                     -*- lexical-binding: t; -*-
 
 ;; Copyright (C) 2018  Shen, Jen-Chieh
 ;; Created date 2018-06-02 10:15:37
@@ -7,7 +7,7 @@
 ;; Description: Remind current line status by current buffer.
 ;; Keyword: abbreviation customizable shortcut
 ;; Version: 0.0.1
-;; Package-Requires: ((emacs "24.4") (cl-lib "0.6"))
+;; Package-Requires: ((emacs "24.4"))
 ;; URL: https://github.com/jcs090218/customize-shortcut
 
 ;; This file is NOT part of GNU Emacs.
@@ -27,7 +27,7 @@
 
 ;;; Commentary:
 ;;
-;; Customize your own complete shortcut in the project.
+;; Customize your own abbreviation expansion in the project.
 ;;
 
 ;;; Code:
@@ -46,14 +46,14 @@ root directory."
   :type 'string)
 
 
-(defun custom-abbrev-config-file-get-string-from-file (file-path)
+(defsubst custom-abbrev-config-file-get-string-from-file (file-path)
   "Return file-path's file content.
 FILE-PATH : file path."
   (with-temp-buffer
     (insert-file-contents file-path)
     (buffer-string)))
 
-(defun custom-abbrev-parse-ini (file-path)
+(defsubst custom-abbrev-parse-ini (file-path)
   "Parse a .ini file.
 FILE-PATH : .ini file to parse."
   (let ((tmp-ini (custom-abbrev-config-file-get-string-from-file file-path))
@@ -88,7 +88,7 @@ FILE-PATH : .ini file to parse."
     ;; return list.
     tmp-ini-list))
 
-(defun custom-abbrev-get-properties (ini-list in-key)
+(defsubst custom-abbrev-get-properties (ini-list in-key)
   "Get properties data.  Search by key and return value.
 INI-LIST : ini list.  Please use this with/after using
 `custom-abbrev-parse-ini' function.
