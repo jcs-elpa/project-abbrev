@@ -1,11 +1,11 @@
-;;; customize-shortcut.el --- Customize your own complete shortcut in the project.                     -*- lexical-binding: t; -*-
+;;; custom-abbrev.el --- Customize your own complete shortcut in the project.                     -*- lexical-binding: t; -*-
 
 ;; Copyright (C) 2018  Shen, Jen-Chieh
 ;; Created date 2018-06-02 10:15:37
 
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Description: Remind current line status by current buffer.
-;; Keyword: auto-complete customizable shortcut swap
+;; Keyword: abbreviation customizable shortcut
 ;; Version: 0.0.1
 ;; Package-Requires: ((emacs "24.4") (cl-lib "0.6"))
 ;; URL: https://github.com/jcs090218/customize-shortcut
@@ -32,31 +32,31 @@
 
 ;;; Code:
 
-(defgroup customize-shortcut nil
+(defgroup custom-abbrev nil
   "Reminder what is the status of each line for current buffer/file."
-  :prefix "customize-shortcut-"
+  :prefix "custom-abbrev-"
   :group 'tool
-  :link '(url-link :tag "Repository" "https://github.com/jcs090218/customize-shortcut.git"))
+  :link '(url-link :tag "Repository" "https://github.com/jcs090218/custom-abbrev.git"))
 
 
-(defcustom customize-shortcut-config-file "customize-shortcut.config"
+(defcustom custom-abbrev-config-file "custom-abbrev.config"
   "File for your own customizable complete file exists in the relative \
 root directory."
   :group 'customize-shortcut
   :type 'string)
 
 
-(defun customize-shortcut-config-file-get-string-from-file (file-path)
+(defun custom-abbrev-config-file-get-string-from-file (file-path)
   "Return file-path's file content.
 FILE-PATH : file path."
   (with-temp-buffer
     (insert-file-contents file-path)
     (buffer-string)))
 
-(defun customize-shortcut-parse-ini (file-path)
+(defun custom-abbrev-parse-ini (file-path)
   "Parse a .ini file.
 FILE-PATH : .ini file to parse."
-  (let ((tmp-ini (customize-shortcut-config-file-get-string-from-file file-path))
+  (let ((tmp-ini (custom-abbrev-config-file-get-string-from-file file-path))
         (tmp-ini-list '())
         (tmp-pair-list nil)
         (tmp-keyword "")
@@ -88,10 +88,10 @@ FILE-PATH : .ini file to parse."
     ;; return list.
     tmp-ini-list))
 
-(defun customize-shortcut-get-properties (ini-list in-key)
+(defun custom-abbrev-get-properties (ini-list in-key)
   "Get properties data.  Search by key and return value.
 INI-LIST : ini list.  Please use this with/after using
-`customize-shortcut-parse-ini' function.
+`custom-abbrev-parse-ini' function.
 IN-KEY : key to search for value."
   (let ((tmp-index 0)
         (tmp-key "")
@@ -116,24 +116,24 @@ IN-KEY : key to search for value."
 
 
 ;;;###autoload
-(defun customize-shortcut-complete-word ()
+(defun custom-abbrev-complete-word ()
   "Complete the current word that point currently on."
   (interactive)
 
   (let ((config-filepath (concat (cdr (project-current))
-                                 customize-shortcut-config-file))
+                                 custom-abbrev-config-file))
+        (abbrev-list '())
         (current-word (thing-at-point 'word))
         (swap-word ""))
-    (save-excursion
-      ;; Get the corresponding target complete word.
-      (setq swap-word (customize-shortcut-get-properties config-filepath current-word))
+    (setq abbrev-list (custom-abbrev-parse-ini config-filepath))
+    ;; Get the corresponding target complete word.
+    (setq swap-word (custom-abbrev-get-properties abbrev-list current-word))
 
-      ;; Swap word cannot be empty string.
-      (unless (string= "" swap-word)
-        (backward-kill-word 1)
-        (insert )
-        ))))
+    ;; Swap word cannot be empty string.
+    (unless (string= "" swap-word)
+      (backward-kill-word 1)
+      (insert swap-word))))
 
 
-(provide 'customize-shortcut)
-;;; customize-shortcut.el ends here
+(provide 'custom-abbrev)
+;;; custom-abbrev.el ends here
