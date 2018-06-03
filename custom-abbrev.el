@@ -130,9 +130,11 @@ IN-KEY : key to search for value."
     (setq swap-word (custom-abbrev-get-properties abbrev-list current-word))
 
     ;; Swap word cannot be empty string.
-    (unless (string= "" swap-word)
-      (backward-kill-word 1)
-      (insert swap-word))))
+    (if (string= "" swap-word)
+        (error "No customize abbreviation found")
+      (progn
+        (backward-kill-word 1)
+        (insert swap-word)))))
 
 
 (provide 'custom-abbrev)
