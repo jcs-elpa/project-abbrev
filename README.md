@@ -4,8 +4,8 @@ Customize your own abbreviation expansion in the project.<br/><br/>
 
 
 ## Configuration ##
-Name your own customize complete config file. The default name
-is `customize-complete.config`'.
+Name your own customize abbreviation config file. The default name
+is `custom-abbrev.config`.
 ```
 (setq custom-abbrev-config-file "custom-abbrev.config")
 ```
