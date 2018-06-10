@@ -1,4 +1,4 @@
-;;; custom-abbrev.el --- Customize your own abbreviation expansion in the project.                     -*- lexical-binding: t; -*-
+;;; custom-abbrev.el --- Customize abbreviation expansion in the project.                     -*- lexical-binding: t; -*-
 
 ;; Copyright (C) 2018  Shen, Jen-Chieh
 ;; Created date 2018-06-02 10:15:37
@@ -27,7 +27,7 @@
 
 ;;; Commentary:
 ;;
-;; Customize your own abbreviation expansion in the project.
+;; Customize abbreviation expansion in the project.
 ;;
 
 ;;; Code:
@@ -114,6 +114,13 @@ IN-KEY : key to search for value."
     ;; Found nothing, return empty string.
     returns-value))
 
+(defun custom-abbrev-kill-thing-at-point (thing)
+  "Kill the `thing-at-point' for the specified kind of THING."
+  (let ((bounds (bounds-of-thing-at-point thing)))
+    (if bounds
+        (kill-region (car bounds) (cdr bounds))
+      (error "No %s at point" thing))))
+
 
 ;;;###autoload
 (defun custom-abbrev-complete-word ()
@@ -133,7 +140,7 @@ IN-KEY : key to search for value."
     (if (string= "" swap-word)
         (error "No customize abbreviation found")
       (progn
-        (backward-kill-word 1)
+        (custom-abbrev-kill-thing-at-point 'word)
         (insert swap-word)))))
 
 
