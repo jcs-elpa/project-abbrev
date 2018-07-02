@@ -1,25 +1,25 @@
-# custom-abbrev #
+# project-abbrev #
 
 Customize your own abbreviation expansion in the project.<br/><br/>
 
 
 ## Configuration ##
 Name your own customize abbreviation config file. The default name
-is `custom-abbrev.config`.
+is `project-abbrev.config`.
 ```
-(setq custom-abbrev-config-file "custom-abbrev.config")
+(setq project-abbrev-config-file "project-abbrev.config")
 ```
 
 
 ## Key Bindings ##
 Complete the current word that point currently on.
 ```
-(define-key global-map (kbd "C-<return>") #'custom-abbrev-complete-word)
+(define-key global-map (kbd "C-<return>") #'project-abbrev-complete-word)
 ```
 
 
 ## Config Example ##
-This is example of the `custom-abbrev.config` file. Notice this can be customize
+This is example of the `project-abbrev.config` file. Notice this can be customize
 in any programming language or even just a text file as long as you follow this format.
 ```
 #
