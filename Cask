@@ -1,3 +1,3 @@
 (source melpa)
 
-(package-file "custom-abbrev.el")
+(package-file "project-abbrev.el")
