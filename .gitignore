@@ -2,7 +2,7 @@
 /.git
 /recipes
 /test
-custom-abbrev-pkg.el
+project-abbrev-pkg.el
 
 # ignore generated files.
 *.elc
@@ -12,4 +12,4 @@ Update_Log.txt
 TODO(jenchieh).txt
 
 # Ignore test files/directories.
-custom-abbrev.config
+project-abbrev.config
