@@ -35,7 +35,7 @@
 (defgroup project-abbrev nil
   "Reminder what is the status of each line for current buffer/file."
   :prefix "project-abbrev-"
-  :group 'tool
+  :group 'tools
   :link '(url-link :tag "Repository" "https://github.com/jcs090218/project-abbrev.git"))
 
 
@@ -66,7 +66,7 @@ FILE-PATH : .ini file to parse."
 
     (dolist (tmp-line tmp-ini)
       ;; check not comment.
-      (when (not (string-match-p "#" tmp-line))
+      (unless (string-match-p "#" tmp-line)
         ;; Split it.
         (setq tmp-pair-list (split-string tmp-line "="))
 
