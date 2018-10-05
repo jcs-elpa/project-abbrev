@@ -1,5 +1,7 @@
 # project-abbrev #
 
+[![MELPA](https://melpa.org/packages/project-abbrev-badge.svg)](https://melpa.org/#/project-abbrev)
+
 Customize your own abbreviation expansion in the project.<br/><br/>
 
 
