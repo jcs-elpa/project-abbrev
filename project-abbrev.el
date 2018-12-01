@@ -4,7 +4,7 @@
 ;; Created date 2018-06-02 10:15:37
 
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
-;; Description: Remind current line status by current buffer.
+;; Description: Customize abbreviation expansion in the project.
 ;; Keyword: abbreviation customizable shortcut
 ;; Version: 0.0.1
 ;; Package-Requires: ((emacs "24.4"))
