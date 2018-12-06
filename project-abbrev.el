@@ -36,7 +36,7 @@
   "Reminder what is the status of each line for current buffer/file."
   :prefix "project-abbrev-"
   :group 'tools
-  :link '(url-link :tag "Repository" "https://github.com/jcs090218/project-abbrev.git"))
+  :link '(url-link :tag "Repository" "https://github.com/jcs090218/project-abbrev"))
 
 
 (defcustom project-abbrev-config-file "project-abbrev.config"
