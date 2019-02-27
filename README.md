@@ -5,20 +5,20 @@
 
 # project-abbrev #
 
-Customize your own abbreviation expansion in the project.<br/><br/>
+Customize your own abbreviation expansion in the project.
 
 
 ## Configuration ##
 Name your own customize abbreviation config file. The default name
 is `project-abbrev.config`.
-```
+```el
 (setq project-abbrev-config-file "project-abbrev.config")
 ```
 
 
 ## Key Bindings ##
 Complete the current word that point currently on.
-```
+```el
 (define-key global-map (kbd "C-<return>") #'project-abbrev-complete-word)
 ```
 
@@ -26,7 +26,7 @@ Complete the current word that point currently on.
 ## Config Example ##
 This is example of the `project-abbrev.config` file. Notice this can be customize
 in any programming language or even just a text file as long as you follow this format.
-```
+```el
 #
 # Customize all the expand shortcut here.
 #
