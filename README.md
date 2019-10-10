@@ -12,23 +12,29 @@
 
 
 ## Configuration
+
 Name your own customize abbreviation config file. The default name
 is `project-abbrev.config`.
+
 ```el
 (setq project-abbrev-config-file "project-abbrev.config")
 ```
 
 
 ## Key Bindings
+
 Complete the current word that point currently on.
+
 ```el
 (define-key global-map (kbd "C-<return>") #'project-abbrev-complete-word)
 ```
 
 
 ## Config Example
+
 This is example of the `project-abbrev.config` file. Notice this can be customize
 in any programming language or even just a text file as long as you follow this format.
+
 ```ini
 #
 # Customize all the expand shortcut here.
@@ -41,6 +47,7 @@ syserr=System.err.println();
 
 
 ## Contribution
+
 If you would like to contribute to this project, you may either 
 clone and make pull requests to this repository. Or you can 
 clone the project and establish your own branch of this tool. 
