@@ -1,16 +1,14 @@
-[![Build Status](https://travis-ci.com/jcs090218/project-abbrev.svg?branch=master)](https://travis-ci.com/jcs090218/project-abbrev)
+[![Build Status](https://travis-ci.com/jcs-elpa/project-abbrev.svg?branch=master)](https://travis-ci.com/jcs-elpa/project-abbrev)
 [![MELPA](https://melpa.org/packages/project-abbrev-badge.svg)](https://melpa.org/#/project-abbrev)
 [![MELPA Stable](https://stable.melpa.org/packages/project-abbrev-badge.svg)](https://stable.melpa.org/#/project-abbrev)
 [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
-
 
 # project-abbrev
 > Customize your own abbreviation expansion in the project.
 
 <p align="center">
-  <img src="./screenshot/custom-abbrev-demo.gif" with="600" height="264"/>
+  <img src="./etc/custom-abbrev-demo.gif" with="600" height="264"/>
 </p>
-
 
 ## Configuration
 
@@ -21,7 +19,6 @@ is `project-abbrev.config`.
 (setq project-abbrev-config-file "project-abbrev.config")
 ```
 
-
 ## Key Bindings
 
 Complete the current word that point currently on.
@@ -29,7 +26,6 @@ Complete the current word that point currently on.
 ```el
 (define-key global-map (kbd "C-<return>") #'project-abbrev-complete-word)
 ```
-
 
 ## Config Example
 
@@ -45,7 +41,6 @@ in any programming language or even just a text file as long as you follow this 
 sysout=System.out.println();
 syserr=System.err.println();
 ```
-
 
 ## Contribution
 
