@@ -1,4 +1,4 @@
-;;; project-abbrev.el --- Customize abbreviation expansion in the project.  -*- lexical-binding: t; -*-
+;;; project-abbrev.el --- Customize abbreviation expansion in the project  -*- lexical-binding: t; -*-
 
 ;; Copyright (C) 2018  Shen, Jen-Chieh
 ;; Created date 2018-06-02 10:15:37
@@ -7,7 +7,7 @@
 ;; Description: Customize abbreviation expansion in the project.
 ;; Keyword: abbreviation customizable shortcut
 ;; Version: 0.0.3
-;; Package-Requires: ((emacs "24.4"))
+;; Package-Requires: ((emacs "25.1"))
 ;; URL: https://github.com/jcs-elpa/project-abbrev
 
 ;; This file is NOT part of GNU Emacs.
