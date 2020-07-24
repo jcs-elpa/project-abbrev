@@ -8,7 +8,7 @@
 ;; Keyword: abbreviation customizable shortcut
 ;; Version: 0.0.2
 ;; Package-Requires: ((emacs "24.4"))
-;; URL: https://github.com/jcs090218/project-abbrev
+;; URL: https://github.com/jcs-elpa/project-abbrev
 
 ;; This file is NOT part of GNU Emacs.
 
@@ -23,7 +23,7 @@
 ;; GNU General Public License for more details.
 
 ;; You should have received a copy of the GNU General Public License
-;; along with this program.  If not, see <http://www.gnu.org/licenses/>.
+;; along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 ;;; Commentary:
 ;;
@@ -36,7 +36,7 @@
   "Reminder what is the status of each line for current buffer/file."
   :prefix "project-abbrev-"
   :group 'tools
-  :link '(url-link :tag "Repository" "https://github.com/jcs090218/project-abbrev"))
+  :link '(url-link :tag "Repository" "https://github.com/jcs-elpa/project-abbrev"))
 
 
 (defcustom project-abbrev-config-file "project-abbrev.config"
