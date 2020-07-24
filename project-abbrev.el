@@ -6,7 +6,7 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Description: Customize abbreviation expansion in the project.
 ;; Keyword: abbreviation customizable shortcut
-;; Version: 0.0.3
+;; Version: 0.0.4
 ;; Package-Requires: ((emacs "25.1"))
 ;; URL: https://github.com/jcs-elpa/project-abbrev
 
