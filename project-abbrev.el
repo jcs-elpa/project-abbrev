@@ -32,6 +32,8 @@
 
 ;;; Code:
 
+(require 'subr-x)
+
 (defgroup project-abbrev nil
   "Reminder what is the status of each line for current buffer/file."
   :prefix "project-abbrev-"
