@@ -1,10 +1,11 @@
 [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 [![MELPA](https://melpa.org/packages/project-abbrev-badge.svg)](https://melpa.org/#/project-abbrev)
 [![MELPA Stable](https://stable.melpa.org/packages/project-abbrev-badge.svg)](https://stable.melpa.org/#/project-abbrev)
-[![CI](https://github.com/jcs-elpa/project-abbrev/actions/workflows/test.yml/badge.svg)](https://github.com/jcs-elpa/project-abbrev/actions/workflows/test.yml)
 
 # project-abbrev
 > Customize your own abbreviation expansion in the project.
+
+[![CI](https://github.com/jcs-elpa/project-abbrev/actions/workflows/test.yml/badge.svg)](https://github.com/jcs-elpa/project-abbrev/actions/workflows/test.yml)
 
 <p align="center">
   <img src="./etc/custom-abbrev-demo.gif" with="600" height="264"/>
