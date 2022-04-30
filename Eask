@@ -1,6 +1,11 @@
-(source "melpa")
+(package "project-abbrev"
+         "0.0.4"
+         "Customize abbreviation expansion in the project")
 
 (package-file "project-abbrev.el")
 
-(setq network-security-level 'low      ; see https://github.com/jcs090218/setup-emacs-windows/issues/156#issuecomment-932956432
-      byte-compile-error-on-warn nil)
+(source "melpa")
+
+(depends-on "emacs" "25.1")
+
+(setq network-security-level 'low)  ; see https://github.com/jcs090218/setup-emacs-windows/issues/156#issuecomment-932956432
