@@ -4,11 +4,10 @@
 ;; Created date 2018-06-02 10:15:37
 
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
-;; Description: Customize abbreviation expansion in the project.
-;; Keyword: abbreviation customizable shortcut
+;; URL: https://github.com/jcs-elpa/project-abbrev
 ;; Version: 0.0.4
 ;; Package-Requires: ((emacs "25.1"))
-;; URL: https://github.com/jcs-elpa/project-abbrev
+;; Keywords: abbreviation customizable shortcut
 
 ;; This file is NOT part of GNU Emacs.
 
