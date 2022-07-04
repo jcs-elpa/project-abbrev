@@ -7,7 +7,7 @@
 ;; URL: https://github.com/jcs-elpa/project-abbrev
 ;; Version: 0.0.4
 ;; Package-Requires: ((emacs "25.1"))
-;; Keywords: abbreviation customizable shortcut
+;; Keywords: abbrev abbreviation customizable shortcut
 
 ;; This file is NOT part of GNU Emacs.
 
