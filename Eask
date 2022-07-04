@@ -3,7 +3,7 @@
          "Customize abbreviation expansion in the project")
 
 (website-url "https://github.com/jcs-elpa/project-abbrev")
-(keywords "abbreviation" "customizable" "shortcut")
+(keywords "abbrev" "abbreviation" "customizable" "shortcut")
 
 (package-file "project-abbrev.el")
 
