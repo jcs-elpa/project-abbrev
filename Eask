@@ -1,3 +1,5 @@
+;; -*- mode: eask; lexical-binding: t -*-
+
 (package "project-abbrev"
          "0.0.4"
          "Customize abbreviation expansion in the project")
